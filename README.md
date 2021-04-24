@@ -1,29 +1,17 @@
-Update
-
 # react-native-vnpt-bridge
 
-react-native-vnpt-bridge
+## Getting started
 
-## Installation
+`$ npm install react-native-vnpt-bridge --save`
 
-```sh
-npm install react-native-vnpt-bridge
-```
+### Mostly automatic installation
+
+`$ react-native link react-native-vnpt-bridge`
 
 ## Usage
+```javascript
+import ReactNativeVnptBridge from 'react-native-vnpt-bridge';
 
-```js
-import VnptBridge from "react-native-vnpt-bridge";
-
-// ...
-
-const result = await VnptBridge.multiply(3, 7);
+// TODO: What to do with the module?
+ReactNativeVnptBridge;
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT

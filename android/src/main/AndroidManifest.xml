@@ -1,4 +1,6 @@
+<!-- AndroidManifest.xml -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.reactnativevnptbridge">
+          package="com.reactlibrary">
 
 </manifest>

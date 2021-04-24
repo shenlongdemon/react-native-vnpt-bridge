@@ -1,3 +1,5 @@
+# react-native-vnpt-bridge.podspec
+
 require "json"
 
 package = JSON.parse(File.read(File.join(__dir__, "package.json")))
@@ -6,14 +8,23 @@ Pod::Spec.new do |s|
   s.name         = "react-native-vnpt-bridge"
   s.version      = package["version"]
   s.summary      = package["description"]
-  s.homepage     = package["homepage"]
-  s.license      = package["license"]
-  s.authors      = package["author"]
+  s.description  = <<-DESC
+                  react-native-vnpt-bridge
+                   DESC
+  s.homepage     = "https://github.com/github_account/react-native-vnpt-bridge"
+  # brief license entry:
+  s.license      = "MIT"
+  # optional - use expanded license entry instead:
+  # s.license    = { :type => "MIT", :file => "LICENSE" }
+  s.authors      = { "Your Name" => "yourname@email.com" }
+  s.platforms    = { :ios => "9.0" }
+  s.source       = { :git => "https://github.com/github_account/react-native-vnpt-bridge.git", :tag => "#{s.version}" }
 
-  s.platforms    = { :ios => "10.0" }
-  s.source       = { :git => "https://github.com/shenlongdemon/react-native-vnpt-bridge.git", :tag => "#{s.version}" }
+  s.source_files = "ios/**/*.{h,c,cc,cpp,m,mm,swift}"
+  s.requires_arc = true
 
-  s.source_files = "ios/**/*.{h,m,mm,swift}"
-
-  s.dependency "React-Core"
+  s.dependency "React"
+  # ...
+  # s.dependency "..."
 end
+
